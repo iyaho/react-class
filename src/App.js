@@ -5,8 +5,8 @@ import './App.css';
 function App() {
   return (
     <div className="root">
-      <header>head</header>
-      <nav>nav</nav>
+      <header>Gmail 이미지 </header>
+      <nav><img src="../googlelogo.png" alt="경로 설정하셈"></img></nav>
       <div>
         <section>main</section>
         <aside>aside</aside>

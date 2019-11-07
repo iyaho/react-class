@@ -5,14 +5,11 @@ div.root {
   width: 100vw;
 }
 
-div.root * {
-  border: 1px solid #000;
-  margin: 3px;
-}
-
 div.root>header {
-  height: 20%;
-  background-color: tan;
+  display: flex;
+  height: 10%;
+  align-items: center;
+  flex-direction: row-reverse;
 }
 
 #root>div>div>section {
@@ -20,14 +17,15 @@ div.root>header {
   width: 80vw;
   background-color: yellow;
 }
+
 #root>div>div>aside{
   height: 50vh;
   width: 20vw;
   background-color: blueviolet;
 }
 div.root>nav {
-  height: 10%;
-  background-color: tomato;
+  display: flex;
+  
 }
 
 div.root>div{
