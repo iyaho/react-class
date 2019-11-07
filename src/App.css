@@ -44,7 +44,10 @@ div.root>div.logo{
 }
 
 div.root>nav {
-  
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #root>div>div>section {
@@ -64,6 +67,19 @@ div.root>div{
 }
 
 div.root>footer {
-  height: 20%;
-  background-color: violet;
+  display: flex;
+  align-items: center;
+  height: 5%;
+  background-color: rgb(201, 201, 201);
+  font-size: 80%;
+}
+div.root>footer>a {
+  margin: 5px;
+}
+div.root>footer>a.back {
+  text-align: right;
+  right: 10px;
+}
+div.root>footer>:hover{
+  text-decoration-line: underline;
 }
