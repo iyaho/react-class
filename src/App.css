@@ -4,28 +4,58 @@ div.root {
   height: 100vh;
   width: 100vw;
 }
+div.root>header>a{
+  position: relative;
+  right: 50px;
+  margin: 5px;
+}
+a:link{text-decoration:none;color: black;}
+a:visited{text-decoration: none;color: black;}
+a:active{text-decoration:none;color: black;}
+div.root>header>a:hover{
+  text-decoration-line: underline;
+}
+div.root>header>img{
+  position: fixed;
+  right: 40px;
+}
+div.root>header>img.user{
+  right: 10px;
+  width: 22px;
+  height: auto;
+}
+div.root>header>img.apps:hover{
+  color: black;
+}
 
 div.root>header {
   display: flex;
   height: 10%;
   align-items: center;
   flex-direction: row-reverse;
+  margin: 5px;;
+}
+
+div.root>div.logo{
+  height: 40%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+div.root>nav {
+  
 }
 
 #root>div>div>section {
   height: 50vh;
   width: 80vw;
-  background-color: yellow;
 }
 
 #root>div>div>aside{
   height: 50vh;
   width: 20vw;
   background-color: blueviolet;
-}
-div.root>nav {
-  display: flex;
-  
 }
 
 div.root>div{
