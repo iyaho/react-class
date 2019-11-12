@@ -26,13 +26,13 @@ class App extends React.Component {
 
   render() {
     return (
-      <>
+      <div>
         <input type="text" onChange={this.onChange} />
         <button onClick={this.onClickAdd}>추가</button>
         {this.state.items.map((value, idx) => (
           <TodoItem key={idx} value={value} />
         ))}
-      </>
+      </div>
     );
   }
 }
