@@ -12,7 +12,6 @@ body{
 }
 div{
     width: 40vw;
-    display: flex;
     border-color: maroon;
     border-radius: 10px;
     flex-direction: column;
