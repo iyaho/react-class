@@ -8,10 +8,10 @@ class TodoItem extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className="div">
         <span>{this.props.value}</span>
-        <button>수정</button>
-        <button>삭제</button>
+        <button className="button" >수정</button>
+        <button className="button">삭제</button>
       </div>
     );
   }
