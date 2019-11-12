@@ -2,12 +2,13 @@ body{
     
     margin:  5px;
     border-color: chartreuse;
-    background-color: yellow;
+    background-color: palegreen;
 }
 
 .button{
     background-color: wheat;
     border-radius: 5px;
+    display: inline;
 }
 div{
     width: 40vw;
