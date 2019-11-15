@@ -1,58 +1,25 @@
 import React from "react";
-import Todo from "./Todo";
-import './app.css'
+import "./App.css";
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      items: [],
-      value: ""
-    };
-  }
-
-  onClickAdd = e => {
-    const items = this.state.items;
-    items.push(this.state.value);
-    this.setState({
-      items
-    });
-  };
-
-  onChange = e => {
-    this.setState({ value: e.target.value });
-  };
-
-  onClickDel= idx =>{
-    const items = this.state.items;
-    this.setState({
-      items:[...items.slice(0,idx),...items.slice(idx+1)]
-    });
-    console.log(idx);
-  };
-
-  onClickMod=(value,idx) => {
-    const newItems=[
-      ...this.state.items.slice(0,idx),
-      value,
-      ...this.state.items.slice(idx+1)
-    ];
-    this.setState({
-      items:newItems
-    });
-  };
+const App = () => {
+  const [name, setName] = React.useState("");
+  const [color,setColor]=React.useState([0,0,0]);
+  React.useEffect(()=>{
+    setColor(randColor());
+  },[name]);
   
-  render() {
-    return (
-      <div>
-        <input type="text" onChange={this.onChange}/>
-        <button onClick={this.onClickAdd} >추가</button>
-        {this.state.items.map((value, idx) => (
-          <Todo key={Math.random()} value={value} onClickDel={()=>{this.onClickDel(idx)}} onClickMod={()=>{var value=prompt();this.onClickMod(value,idx)}}/>
-        ))}
-      </div>
-    );
-  }
-}
-export default App; 
+  const randColor=()=>{
+    return [
+      Math.floor(Math.random()*255),
+      Math.floor(Math.random()*255),
+      Math.floor(Math.random()*255)
+    ]
+  };
+  return (
+    <div className="aroot">
+      <input type="text" onChange={e=>setName(e.target.value)}/>
+      <div style={{color: `rgb(${color[0]},${color[1]},${color[2]})`}}>{name}</div>
+    </div>
+  );
+};
+export default App;

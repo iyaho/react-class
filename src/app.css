@@ -1,27 +1,4 @@
-body{
-    
-    margin:  5px;
-    border-color: chartreuse;
-    background-color: palegreen;
-}
-
-.button{
-    background-color: wheat;
-    border-radius: 5px;
-    display: inline;
-}
-div{
-    width: 40vw;
-    border-color: maroon;
-    border-radius: 10px;
-    flex-direction: column;
+.body{
+    display: flex;
     align-items: center;
-}
-
-.div{
-    border-color: white;
-    margin: 5px;
-}
-span{
-    background-color: lightgray;
 }
